@@ -21,7 +21,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
-            <version>${spring-jpa-version}</version>
+            <version>${spring.jpa.version}</version>
         </dependency>
         <!--<dependency>-->
             <!--<groupId>javax.persistence</groupId>-->
@@ -31,12 +31,12 @@
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
-            <version>${dbcp-version}</version>
+            <version>${dbcp.version}</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql-version}</version>
+            <version>${mysql.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>

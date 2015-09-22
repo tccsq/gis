@@ -11,4 +11,8 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl extends BaseServiceImpl<User,Integer> implements UserService  {
 
 
+    @Override
+    public User findUserByUsername(String userName) {
+        return null;
+    }
 }

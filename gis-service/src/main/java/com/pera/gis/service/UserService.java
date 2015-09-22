@@ -7,4 +7,6 @@ import com.pera.gis.data.model.User;
  */
 public interface UserService extends BaseService<User,Integer>{
 
+    User findUserByUsername(String userName);
+
 }
