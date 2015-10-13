@@ -28,4 +28,11 @@ public class UserServiceImplTest {
 
         userService.save(user);
     }
+
+    @Test
+    public void testFindOne(){
+        User u = userService.findUserByUsername("张三");
+        System.out.println(u.getName());
+        assertNotNull(u);
+    }
 }

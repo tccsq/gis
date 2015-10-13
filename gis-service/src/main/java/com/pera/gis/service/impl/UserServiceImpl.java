@@ -13,6 +13,8 @@ public class UserServiceImpl extends BaseServiceImpl<User,Integer> implements Us
 
     @Override
     public User findUserByUsername(String userName) {
-        return null;
+        User user = new User();
+        user.setUsername(userName);
+        return findOne(user);
     }
 }

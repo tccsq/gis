@@ -45,7 +45,8 @@
 
     <!-- Spring 事务配置，声明式事务 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
-    <jpa:repositories base-package="com.pera.gis.data.dao"/>
+    <jpa:repositories base-package="com.pera.gis.data.dao" base-class="com.pera.gis.data.dao.impl.BaseDaoImpl"  />
+
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
